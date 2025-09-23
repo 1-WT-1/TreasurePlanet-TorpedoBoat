@@ -1,0 +1,20 @@
+locale|en
+
+SHIP_TORPEDO_BOAT|Torpedo Boat
+
+SHIP_TORPEDO_BOAT_DESC|A recreation of a vessel from the 21st-century video game, "Treasure Planet: Battle at Procyon". This "Age of Sail" design utilizes a minimal thruster layout; its agility comes from the exceptionally wide gimbal range on both its main engine and its two maneuvering thrusters.
+
+SHIP_TORPEDO_BOAT_SPECS|Make: The Royal Navy\nForward Hardpoints: 1\nFixed Hardpoints: 2\nMain engine gimbal: 11 deg\nThruster mount gimbal: 36 deg\nCrew: 5\nDry mass: 17,900 kg\nCargo bay: 30 m^3\nProcessed cargo storage (combined): 30,000 kg\nEMP shielding: 50 MW
+
+SYSTEM_REACTOR_TORPEDO_BOAT|"Etherium" Custom Reactor
+
+
+SLOT_TP_BOAT_FORWARD|Forward Hardpoint
+
+SLOT_TP_BOAT_FIXED_LEFT|Left Fixed Hardpoint
+
+SLOT_TP_BOAT_FIXED_RIGHT|Right Fixed Hardpoint
+
+TPBOAT_MOD_DESCRIPTION|Adds the Royal Navy Torpedo Boat, a vessel from the game "Treasure Planet: Battle at Procyon".
+
+TPBOAT_MOD_BRIEF|New Ship: Royal Navy Torpedo Boat...

@@ -1,0 +1,33 @@
+[mod_information]
+
+name="Treasure Planet Torpedo Boat"
+id="wt.TreasurePlanet-TorpedoBoat"
+description="TPBOAT_MOD_DESCRIPTION"
+brief="TPBOAT_MOD_BRIEF"
+author="WT"
+credits=["_Hev - author of HevLib, help with setting weaponslots using said library"]
+
+[version]
+
+version_major=0
+version_minor=1
+version_bugfix=0
+version_metadata=""
+
+[tags]
+
+TAG_ADDS_SHIPS={"type":"bool","value":true}
+
+[languages]
+
+en="100%"
+uk_UA="0%"
+
+[links]
+
+HEVLIB_GITHUB={"URL":"https://github.com/1-WT-1/TreasurePlanet-TorpedoBoat"}
+HEVLIB_DISCORD={"URL":"https://discord.com/channels/426287934870781952/1420028533488615496"}
+
+[manifest_definitions]
+
+manifest_version=2.2

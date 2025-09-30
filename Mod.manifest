@@ -11,7 +11,7 @@ credits=["_Hev - author of HevLib, help with setting weaponslots using said libr
 
 version_major=0
 version_minor=1
-version_bugfix=1
+version_bugfix=2
 version_metadata=""
 
 [tags]

@@ -228,15 +228,14 @@ defaultAutopilot = "SYSTEM_AUTOPILOT_NONE"
 gFatigueLimit = 300.0
 empShield = 50
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -19, -159, 38, 115 )
+cargoHoldArea = Rect2( -25, -159, 50, 115 )
 cargoHoldOffset = Vector2( 0, 109 )
 
 [node name="Collider" type="CollisionPolygon2D" parent="."]
-visible = false
 light_mask = 0
 position = Vector2( 0, -50 )
 z_index = 50
-polygon = PoolVector2Array( 0, 181.2, 15.6, 172.8, 21, 164, 24, 153, 27, 139, 31, 113, 28, 103, 28, 61, 32, 60, 32, 42, 39, 36, 33.6, -26.4, 18, -73.2, 15, -74, 15, 3, -15, 3, -15, -74, -19.2, -73.2, -33.6, -26.4, -39, 36, -32, 42, -32, 60, -28, 61, -28, 103, -31, 113, -27, 138, -24, 153, -21, 164, -15.6, 172.8 )
+polygon = PoolVector2Array( 0, 181.2, 15.6, 172.8, 21, 164, 24, 153, 27, 139, 31, 113, 28, 103, 28, 61, 32, 60, 32, 42, 39, 36, 33.6, -26.4, 18, -73.2, 15, -74, 20, -40, 22, -4, 15, 3, -15, 3, -22, -4, -20, -40, -15, -74, -19.2, -73.2, -33.6, -26.4, -39, 36, -32, 42, -32, 60, -28, 61, -28, 103, -31, 113, -27, 138, -24, 153, -21, 164, -15.6, 172.8 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
 visible = false
@@ -251,7 +250,7 @@ angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldArea"]
 light_mask = 0
-polygon = PoolVector2Array( -10, -49, 10, -49, 18, -24, 18, -15, 17, 64, -17, 64, -18, -15, -18, -24 )
+polygon = PoolVector2Array( -10, -49, 10, -49, 18, -24, 18, -15, 22, 20, 23, 64, -23, 64, -22, 20, -18, -15, -18, -24 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
 visible = false
@@ -288,24 +287,6 @@ z_index = 11
 light_mask = 16
 occluder = SubResource( 40 )
 light_mask = 16
-
-[node name="CargoBafflesRemoved" parent="." instance=ExtResource( 17 )]
-visible = false
-position = Vector2( 0, -30 )
-systemName = ""
-slot = ""
-
-[node name="LeftBaffle" parent="CargoBafflesRemoved" index="0"]
-position = Vector2( -12.5, -92 )
-
-[node name="CollisionPolygon2D" parent="CargoBafflesRemoved/LeftBaffle" index="1"]
-polygon = PoolVector2Array( 11.5, -5, 11.5, -1, 2.5, 3, -1.5, -1 )
-
-[node name="RightBaffle" parent="CargoBafflesRemoved" index="1"]
-position = Vector2( 12.5, -92 )
-
-[node name="CollisionPolygon2D" parent="CargoBafflesRemoved/RightBaffle" index="1"]
-polygon = PoolVector2Array( -11.5, -5, -11.5, -1, -1.5, 3, 1.5, -1 )
 
 [node name="CargoLight" type="Light2D" parent="."]
 light_mask = 7
@@ -753,44 +734,55 @@ position = Vector2( 0, -4976 )
 [node name="MineralProcessingUnit" parent="." instance=ExtResource( 8 )]
 visible = false
 position = Vector2( 0, -70 )
-polygon = PoolVector2Array( -15, -42.56, -8.38, -27.36, -6.17, -9.12, -9.7, -3.04, -9.7, 9.12, -4.41, 18.24, 4.41, 18.24, 9.7, 9.12, 9.7, -3.04, 6.17, -9.12, 8.38, -27.36, 15, -42.56, 15, 24, -15, 24 )
+polygon = PoolVector2Array( -15, -54, -12, -10, -16, -3, -16, 11, -10, 18, 9, 18, 16, 11, 16, -3, 12, -10, 15, -54, 20, -20, 22, 16, 15, 23, -15, 23, -22, 16, -20, -20 )
+
+[node name="MineralProcessingUnit" parent="MineralProcessingUnit" index="0"]
+position = Vector2( 0, 4 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -15, 24, 15, 24, 15, -12, -15, -12 )
+polygon = PoolVector2Array( -17, 14, 17, 14, 17, -13, -17, -13 )
 
 [node name="MineralProcessingUnit_DRY" parent="." instance=ExtResource( 19 )]
 visible = false
 position = Vector2( 0, -70 )
-polygon = PoolVector2Array( -15, -54, -13, -49, -9.7, 9.12, -4.41, 18.24, 4.41, 18.24, 9.7, 9.12, 13, -49, 15, -54, 15, 23, -15, 23 )
+polygon = PoolVector2Array( -15, -54, -13, -49, -17, 10, -10, 18, 11, 18, 18, 10, 13, -49, 15, -54, 20, -20, 22, 16, 15, 23, -15, 23, -22, 16, -20, -20 )
 
 [node name="MineralProcessingUnit" parent="MineralProcessingUnit_DRY" index="0"]
 scale = Vector2( 0.5, 0.8 )
 
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit_DRY/MineralProcessingUnit" index="0"]
+polygon = PoolVector2Array( -38, 15, -14, 28, 16, 28, 40, 16.25, 30, -84, -30, -84 )
+
 [node name="MineralProcessingUnit_FSO" parent="." instance=ExtResource( 16 )]
 visible = false
 position = Vector2( 0, -70 )
-polygon = PoolVector2Array( -15, -54, -13, -49, -9.7, 9.12, -4.41, 18.24, 4.41, 18.24, 9.7, 9.12, 13, -49, 15, -54, 15, 24, -15, 24 )
+polygon = PoolVector2Array( -15, -54, -13, -49, -17, 10, -10, 18, 11, 18, 18, 10, 13, -49, 15, -54, 20, -20, 22, 16, 15, 23, -15, 23, -22, 16, -20, -20 )
 
 [node name="MineralProcessingUnit" parent="MineralProcessingUnit_FSO" index="0"]
-visible = false
 scale = Vector2( 0.5, 0.8 )
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit" index="0"]
+polygon = PoolVector2Array( -38, 15, -14, 28, 16, 28, 40, 16.25, 30, -84, -30, -84 )
 
 [node name="MineralProcessingUnit_SMELT" parent="." instance=ExtResource( 9 )]
 visible = false
 position = Vector2( 0, -70 )
-polygon = PoolVector2Array( -15, -54, -7.06, -45.6, -5.29, -21.28, -7.94, -16.72, -7.94, -3.04, -4.41, 3.04, 4.41, 3.04, 7.94, -3.04, 7.94, -16.72, 5.29, -21.28, 7.06, -45.6, 15, -54, 15, 24, -15, 24 )
+polygon = PoolVector2Array( -15, -54, -10, -13, -14, -10, -14, 9, -6, 13, 6, 13, 14, 9, 14, -10, 10, -13, 15, -54, 20, -20, 22, 16, 15, 24, -15, 24, -22, 16, -20, -20 )
+
+[node name="MineralProcessingUnit" parent="MineralProcessingUnit_SMELT" index="0"]
+position = Vector2( 0, 9 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_SMELT/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -14, 8, 14, 8, 15, -30, -15, -30 )
+polygon = PoolVector2Array( -15, 8, 16, 8, 16, -22, -15, -22 )
 
 [node name="MineralProcessingUnit_FAB" parent="." instance=ExtResource( 12 )]
 visible = false
 position = Vector2( 0, -66 )
-polygon = PoolVector2Array( -15, -58, 0, -25.84, 0, -13.88, -6.17, -13.68, -9.7, -6.84, -9.7, 9.12, -4.41, 18.24, 7.06, 18.24, 11.91, 9.12, 12, -26, 15, -58, 15, 21, -15, 21 )
+polygon = PoolVector2Array( -15, -58, -10, -26, -10, -19, -17, -10, -17, -1, -10, 8, 5, 8, 12, -1, 12, -26, 15, -58, 20, -24, 22, 12, 15, 21, -15, 21, -22, 12, -20, -24 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
 position = Vector2( 0, 0 )
-polygon = PoolVector2Array( -15, 21, 15, 21, 15, -18, -15, -18 )
+polygon = PoolVector2Array( -19, 11, 14, 11, 14, -19, -19, -19 )
 
 [node name="Noises" parent="." instance=ExtResource( 32 )]
 
@@ -895,9 +887,10 @@ rect = Rect2( -100, -100, 200, 200 )
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 visible = false
-margin_left = -19.0
+light_mask = 13
+margin_left = -25.0
 margin_top = -159.0
-margin_right = 19.0
+margin_right = 25.0
 margin_bottom = -44.0
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 17 )]
@@ -944,7 +937,6 @@ range_height = 50.0
 [connection signal="body_exited" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_exited"]
 
 [editable path="Front Bumper"]
-[editable path="CargoBafflesRemoved"]
 [editable path="CenterSailSlot"]
 [editable path="LeftSailSlot"]
 [editable path="RightSailSlot"]

@@ -355,7 +355,6 @@ shadow_filter_smooth = 4.0
 shadow_item_cull_mask = 19
 
 [node name="CenterSailSlot" parent="." instance=ExtResource( 13 )]
-visible = false
 position = Vector2( 0, -230 )
 z_index = 30
 slot = "sailCenter"
@@ -787,7 +786,6 @@ polygon = PoolVector2Array( -19, 11, 14, 11, 14, -19, -19, -19 )
 [node name="Noises" parent="." instance=ExtResource( 32 )]
 
 [node name="allbright" type="Light2D" parent="."]
-visible = false
 material = SubResource( 28 )
 z_index = 40
 editor_only = true

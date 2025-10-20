@@ -10,8 +10,8 @@ credits=["_Hev - author of HevLib, help with setting weaponslots using said libr
 [version]
 
 version_major=0
-version_minor=1
-version_bugfix=2
+version_minor=2
+version_bugfix=0
 version_metadata=""
 
 [tags]
@@ -28,6 +28,18 @@ uk_UA="0%"
 HEVLIB_GITHUB={"URL":"https://github.com/1-WT-1/TreasurePlanet-TorpedoBoat"}
 HEVLIB_DISCORD={"URL":"https://discord.com/channels/426287934870781952/1420028533488615496"}
 
+[configs]
+TPBOAT_CONFIG_OPTIONS={
+    "addToUsedShipPool":{
+        "name":"TPBOAT_CONFIG_ADD_TO_USED_SHIP_POOL_NAME",
+        "description":"TPBOAT_CONFIG_ADD_TO_USED_SHIP_POOL_DESC",
+        "type":"bool",
+        "default":true
+    }
+}
+
 [manifest_definitions]
 
 manifest_version=2.2
+dependancy_mod_ids=["hev.LIBRARY"]
+manifest_url="https://raw.githubusercontent.com/1-WT-1/TreasurePlanet-TorpedoBoat/refs/heads/main/Mod.manifest

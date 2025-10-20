@@ -15,6 +15,10 @@ SLOT_TP_BOAT_FIXED_LEFT|Left Fixed Hardpoint
 
 SLOT_TP_BOAT_FIXED_RIGHT|Right Fixed Hardpoint
 
-TPBOAT_MOD_DESCRIPTION|Adds the Royal Navy Torpedo Boat, a vessel from the game "Treasure Planet: Battle at Procyon".
 
+TPBOAT_MOD_DESCRIPTION|Adds the Royal Navy Torpedo Boat, a vessel from the game "Treasure Planet: Battle at Procyon".
 TPBOAT_MOD_BRIEF|New Ship: Royal Navy Torpedo Boat...
+
+TPBOAT_CONFIG_OPTIONS|Config
+TPBOAT_CONFIG_ADD_TO_USED_SHIP_POOL_NAME|Add to Used Ship Pool
+TPBOAT_CONFIG_ADD_TO_USED_SHIP_POOL_DESC|If enabled, adds the Torpedo Boat to the pool of used ships in dealer.

@@ -6,7 +6,7 @@ const MOD_PRIORITY = 10
 const MOD_NAME = "TorpedoBoat"
 const MOD_VERSION_MAJOR = 0
 const MOD_VERSION_MINOR = 2
-const MOD_VERSION_BUGFIX = 0
+const MOD_VERSION_BUGFIX = 1
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
@@ -24,7 +24,8 @@ func _init(modLoader = ModLoader):
 	replaceScene("enceladus/Dealer.tscn")
 	#replaceScene("ships/TorpedoBoat.tscn")
 	
-	if ConfigDriver.__get_value("TreasurePlanetTorpedoBoat", "TPBOAT_CONFIG_OPTIONS", "addToUsedShipPool"):
+	var config = ConfigDriver.__get_config("TreasurePlanetTorpedoBoat")
+	if config.get("TPBOAT_CONFIG_OPTIONS",{}).get("addToUsedShipPool",true):
 		installScriptExtension("CurrentGame.gd")
 		l("Added TorpedoBoat to used ship pool")
 	

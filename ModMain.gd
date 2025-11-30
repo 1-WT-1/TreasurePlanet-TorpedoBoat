@@ -6,7 +6,7 @@ const MOD_PRIORITY = 10
 const MOD_NAME = "TorpedoBoat"
 const MOD_VERSION_MAJOR = 0
 const MOD_VERSION_MINOR = 2
-const MOD_VERSION_BUGFIX = 1
+const MOD_VERSION_BUGFIX = 2
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"

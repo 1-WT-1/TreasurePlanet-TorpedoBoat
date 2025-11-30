@@ -11,7 +11,7 @@ credits=["_Hev - author of HevLib, help with setting weaponslots using said libr
 
 version_major=0
 version_minor=2
-version_bugfix=1
+version_bugfix=2
 version_metadata=""
 
 [tags]
@@ -42,4 +42,4 @@ TPBOAT_CONFIG_OPTIONS={
 
 manifest_version=2.2
 dependancy_mod_ids=["hev.LIBRARY"]
-manifest_url="https://raw.githubusercontent.com/1-WT-1/TreasurePlanet-TorpedoBoat/refs/heads/main/Mod.manifest
+manifest_url="https://raw.githubusercontent.com/1-WT-1/TreasurePlanet-TorpedoBoat/refs/heads/main/Mod.manifest"

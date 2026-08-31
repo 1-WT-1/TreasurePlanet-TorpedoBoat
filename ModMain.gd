@@ -13,9 +13,6 @@ var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
 var _savedObjects := []
 
-# Load the HevLib ConfigDriver
-var ConfigDriver = load("res://HevLib/pointers/ConfigDriver.gd")
-
 func _init(modLoader = ModLoader):
 	l("Initializing")
 	
@@ -24,8 +21,7 @@ func _init(modLoader = ModLoader):
 	replaceScene("enceladus/Dealer.tscn")
 	#replaceScene("ships/TorpedoBoat.tscn")
 	
-	var config = ConfigDriver.__get_config("TreasurePlanetTorpedoBoat")
-	if config.get("TPBOAT_CONFIG_OPTIONS",{}).get("addToUsedShipPool",true):
+	if modLoader._savedObjects[0].ConfigDriver.__get_value("TreasurePlanetTorpedoBoat","TPBOAT_CONFIG_OPTIONS","addToUsedShipPool"):
 		installScriptExtension("CurrentGame.gd")
 		l("Added TorpedoBoat to used ship pool")
 	

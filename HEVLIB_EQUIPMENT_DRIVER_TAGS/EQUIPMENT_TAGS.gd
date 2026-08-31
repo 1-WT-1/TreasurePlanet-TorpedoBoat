@@ -1,5 +1,3 @@
-extends Node
-
 const EQUIPMENT_TAGS = {
 	"hardpoint_types":[
 		"HARDPOINT_SAIL_MIKE",

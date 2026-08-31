@@ -1,5 +1,3 @@
-extends Node
-
 const WEAPONSLOT_SHIP_MODIFY = {
 	"SHIP_TORPEDO_BOAT":{
 		"sailCenter":{
@@ -32,7 +30,8 @@ const WEAPONSLOT_SHIP_MODIFY = {
 			"SYSTEM_DND_HARVTUG":[
 				{
 					"property":"position",
-					"value":"Vector2( 0, 0 )"
+					"value":Vector2( 0, 0 ),
+					"use_stringified_value":false
 				},
 				{
 					"property":"z_index",

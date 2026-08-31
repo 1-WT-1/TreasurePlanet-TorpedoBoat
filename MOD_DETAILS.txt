@@ -1,0 +1,8 @@
+;MOD_ID|wt.TreasurePlanet-TorpedoBoat
+;MOD_NAME|Treasure Planet Torpedo Boat
+;MOD_ICON|https://raw.githubusercontent.com/1-WT-1/TreasurePlanet-TorpedoBoat/refs/heads/main/icon.png
+;MOD_ZIP_NAME|TreasurePlanet-TorpedoBoat.zip
+
+[center][b]Treasure Planet Torpedo Boat[/b][/center]
+
+A recreation of a vessel from the 21st-century video game, "Treasure Planet: Battle at Procyon". This "Age of Sail" design utilizes a minimal thruster layout; its agility comes from the exceptionally wide gimbal range on both its main engine and its two maneuvering thrusters.

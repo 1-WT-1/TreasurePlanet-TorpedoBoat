@@ -1,5 +1,3 @@
-extends Node
-
 const SAIL_LEFT = {
 	"system_slot":"weaponSlot.sailLeft.type",
 	"slot_node_name":"LeftSailSlot",

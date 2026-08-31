@@ -1,0 +1,34 @@
+[0.3.0]
+
+1="* _hev"
+1.1="* Changed weaponslot modifications to use the new property handling"
+
+2="* WT"
+2.1="* Converted into a modlet"
+2.2="* Registered ship via HevLib's ADD_SHIPS driver"
+2.3="* Switched translations to HevLib's translation driver"
+2.4="* Reduced memory usage of driver files"
+2.5="* Added MOD_DETAILS.txt"
+2.6="* Added 3-Clause BSD NON-AI license"
+
+[0.2.2]
+1="* Fixed missing closing quote mark in manifest URL"
+
+[0.2.1]
+1="* Fixed config loading defaults for addToUsedShipPool"
+
+[0.2.0]
+1="* Added in-game config options using HevLib"
+1.1="* Added toggle for adding ship to dealer used ship pool"
+2="* Added new normal map"
+
+[0.1.2]
+1="* Changed cargo hold shape and MPU colliders"
+2="* Buffed cargo hold capacity from 30m³ to 40m³"
+
+[0.1.1]
+1="* Adjusted visual appearance of Industries of Enceladus equipment"
+2="* Reduced sail and cabin glow intensity"
+
+[0.1.0]
+1="* Initial release"
